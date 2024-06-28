@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>High SCORES</title>
+</head>
+<body>
+    <div class="container">
+        <div class="scores ">
+            <h1>HIGH SCORES</h1>
+            <div class="score-container" ></div>
+           <div class="flexCentre"><a class="btn go " href="index.html">Go Home</a></div>
+        </div>
+    </div>
+    <script>
+        const scoreCont=document.querySelector(".score-container")
+        const highScores=JSON.parse(localStorage.getItem("highScores")) ||[];
+        
+       scoreCont.innerHTML= highScores.map(score => {
+            return `<li class="high-score">&nbsp${score.name}&nbsp&nbsp:&nbsp&nbsp&nbsp${score.score}</li>`
+        }).join("");
+        let scores=document.querySelectorAll(".score");
+        
+
+    </script>
+</body>
+</html>

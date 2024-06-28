@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Play</title>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <div id="game" class="flexCol hidden">
+            <div class="hud">
+                <div class="hud-item">
+                    <p class="hud-prefix progress-text">Question</p>
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">Score</p>
+                    <h1 class="hud-main-text" id="score">0</h1>
+                </div>
+            </div>
+            <h2 id="Qn">qns?
+            </h2>
+            <div class="choice-container">
+                <div class="choice-prefix">A</div>
+                <div class="choice-text" data-number="1">Some choice</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">B</div>
+                <div class="choice-text"data-number="2">Some choice</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">C</div>
+                <div class="choice-text"data-number="3">Some choice</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">D</div>
+                <div class="choice-text"data-number="4">Some choice</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
